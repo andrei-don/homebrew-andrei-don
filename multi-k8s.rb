@@ -5,12 +5,12 @@
 class MultiK8s < Formula
   desc "CLI to create k8s clusters on Multipass VMs."
   homepage "https://github.com/andrei-don/multi-k8s"
-  version "0.0.3"
+  version "0.0.4"
 
   on_macos do
     on_arm do
-      url "https://github.com/andrei-don/multi-k8s/releases/download/v0.0.3/multi-k8s_0.0.3_darwin_arm64.tar.gz"
-      sha256 "396305b95c90165d943d4e8938d6970b51888104c2cfb092e019ec765471a02b"
+      url "https://github.com/andrei-don/multi-k8s/releases/download/v0.0.4/multi-k8s_0.0.4_darwin_arm64.tar.gz"
+      sha256 "9aaafd5a0bc7f933b5c48e62764db1f9a1f90eefe1812d8c59d3d4b070016190"
 
       def install
         bin.install "multi-k8s"
@@ -21,8 +21,8 @@ class MultiK8s < Formula
   on_linux do
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/andrei-don/multi-k8s/releases/download/v0.0.3/multi-k8s_0.0.3_linux_arm64.tar.gz"
-        sha256 "bb03e1d754753db835bd23b60abba822faf0a0a7d4df37596517524216e9efbe"
+        url "https://github.com/andrei-don/multi-k8s/releases/download/v0.0.4/multi-k8s_0.0.4_linux_arm64.tar.gz"
+        sha256 "708f3622f560ef48b4fea9165a8f195bbf28e7c2d58e632b5caaf112147cb76e"
 
         def install
           bin.install "multi-k8s"
